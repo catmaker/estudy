@@ -50,6 +50,7 @@ commands.forEach((command) => {
       queue.push(parseInt(value));
       break;
     case "pop":
+      result.push(queue.length ? queue.shift() : -1);
       break;
     case "front":
       result.push(queue.length ? queue[0] : -1);
